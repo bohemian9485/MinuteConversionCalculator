@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MinuteConversionCalculator", "MinuteConversionCalculator.vbproj", "{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{482D7BD3-8730-46A2-BFBA-7990C3697C02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{482D7BD3-8730-46A2-BFBA-7990C3697C02}.Debug|Any CPU.ActiveCfg = Debug
+		{482D7BD3-8730-46A2-BFBA-7990C3697C02}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B7EA540-D35C-44A1-84DC-97A3392FE8DA}
+	EndGlobalSection
+EndGlobal
