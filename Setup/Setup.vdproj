@@ -40,12 +40,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_86FC729B44054D415F7D301B81B54ABF"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_ED3CB0E9986144D6ADA2B4F2B7A81322"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -53,6 +47,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_33945E35125F1BBD4EB25C480D4C44B9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_86FC729B44054D415F7D301B81B54ABF"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -73,6 +73,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -89,6 +97,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -154,7 +178,7 @@
             "SourcePath" = "8:FractionsOfADay.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_09B5007A1EB94ABC9C7ADE5DD009512D"
+            "Folder" = "8:_5761A670B3A1470194FD76CA7E1988A4"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -185,7 +209,7 @@
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_09B5007A1EB94ABC9C7ADE5DD009512D"
+            "Folder" = "8:_5761A670B3A1470194FD76CA7E1988A4"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -213,17 +237,6 @@
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:DesktopFolder"
-                "Folders"
-                {
-                }
-            }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_09B5007A1EB94ABC9C7ADE5DD009512D"
-            {
-            "Name" = "8:#1936"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:System64Folder"
                 "Folders"
                 {
                 }
@@ -290,7 +303,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Conversion Calculator"
         "ProductCode" = "8:{2025495B-6AB5-4618-BCA2-C73C4835A6D7}"
-        "PackageCode" = "8:{6C286C4E-A12A-462E-AD0D-204403DC8664}"
+        "PackageCode" = "8:{238A3DB4-3C2F-4144-B78C-D3DC3D357B10}"
         "UpgradeCode" = "8:{245D31B5-A8CA-469B-8B61-85B1BCC1B75F}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -298,7 +311,7 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "Manufacturer" = "8:Reynaldo Ibarra C. Tubianosa"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:Conversion Calculator"
@@ -421,7 +434,7 @@
             "Target" = "8:_ED3CB0E9986144D6ADA2B4F2B7A81322"
             "Folder" = "8:_22C71B9AA8C44D45BA7D94CD06057509"
             "WorkingFolder" = "8:_5761A670B3A1470194FD76CA7E1988A4"
-            "Icon" = "8:"
+            "Icon" = "8:_08253B0F75C744EC8DE41E809FED1329"
             "Feature" = "8:"
             }
         }
@@ -825,7 +838,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_ED3CB0E9986144D6ADA2B4F2B7A81322"
             {
-            "SourcePath" = "8:..\\obj\\Debug\\MinuteConversionCalculator.exe"
+            "SourcePath" = "8:..\\obj\\Release\\MinuteConversionCalculator.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_5761A670B3A1470194FD76CA7E1988A4"
