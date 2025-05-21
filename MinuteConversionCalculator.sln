@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MinuteConversionCalculator", "MinuteConversionCalculator.vbproj", "{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{482D7BD3-8730-46A2-BFBA-7990C3697C02}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ConversionCalculator-setup", "ConversionCalculator-setup\ConversionCalculator-setup.vdproj", "{59C01F4C-A308-BF0B-CD3E-7CBAFC947D13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D25237E7-3A8B-4F64-B518-FC8DC578A2BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{482D7BD3-8730-46A2-BFBA-7990C3697C02}.Debug|Any CPU.ActiveCfg = Debug
-		{482D7BD3-8730-46A2-BFBA-7990C3697C02}.Release|Any CPU.ActiveCfg = Release
+		{59C01F4C-A308-BF0B-CD3E-7CBAFC947D13}.Debug|Any CPU.ActiveCfg = Debug
+		{59C01F4C-A308-BF0B-CD3E-7CBAFC947D13}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
