@@ -1,26 +1,41 @@
 ﻿Public Class FrmMain
-    Private conversionWrapper As New FractionsOfADay.ClsConversion
 
-    Private Const MAX_MINUTES As Integer = 3840
-    Private Const WORK_MINUTES As Integer = 480
-    Private Const MINUTES_IN_HOUR As Integer = 60
+    Private leavesEarned As Integer
+    Private wHours As Integer
 
-    Private Sub CalculateCreditsEarned()
-        Dim creditsEarned As Decimal = 0
-        Dim daysCredited As Integer = NudDays.Value
-        Dim daysInMonth As Integer = 30
-        TxtEarned.Text = Math.Round(1.25 / daysInMonth * daysCredited, 3).ToString("0.000")
+    Private Sub ConvertDays()
+        TxtEarned.Text = Math.Round((leavesEarned / 12) / 30 * NudDays.Value, 3).ToString("0.000")
+    End Sub
+
+    Private Sub ConvertedMinutes()
+        Dim totalMinutes As Integer = wHours * 60
+        If totalMinutes > 0 Then
+            TxtFractions.Text = Math.Round(NudMinutes.Value / totalMinutes, 3).ToString("0.000")
+        End If
+    End Sub
+
+    Private Sub ConvertMonths()
+        TxtMonths.Text = Math.Round((leavesEarned / 12) * NudMonths.Value, 3).ToString("0.000")
+    End Sub
+
+    Friend Sub GetSettings()
+        leavesEarned = My.Settings.LeavesEarnedInYear
+        wHours = My.Settings.MaxHours
     End Sub
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
         Text += $" v{My.Application.Info.Version.Major}.{My.Application.Info.Version.Minor}.{My.Application.Info.Version.Build}"
-        conversionWrapper.GetClassSettings()
-        CalculateCreditsEarned()
+        GetSettings()
+        ' Set the default value for the NumericUpDown controls
+        ConvertMonths()
+        ConvertDays()
+        ConvertHours()
+        ConvertedMinutes()
         TopMost = ChkTopMost.Checked
     End Sub
 
-    Private Sub FrmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        conversionWrapper = Nothing
+    Private Sub ConvertHours()
+        TxtHours.Text = Math.Round(60 / 480 * NudHours.Value, 3).ToString("0.000")
     End Sub
 
     Private Sub TxtMinutes_KeyPress(sender As Object, e As KeyPressEventArgs)
@@ -35,32 +50,6 @@
         End If
     End Sub
 
-    Private Sub TxtMinutes_TextChanged(sender As Object, e As EventArgs) Handles TxtMinutes.TextChanged
-        Dim fractionsOfADay As Decimal
-        If TxtMinutes.Text <> vbNullString Then
-            Dim minutesEntered As Integer = CInt(TxtMinutes.Text)
-            If minutesEntered <= MAX_MINUTES Then
-                ' Checks if minutes entered is greater than one hour
-                Dim convertedToHours As Integer = Int(minutesEntered / WORK_MINUTES)
-                If convertedToHours > 1 Then
-                    Dim sixtyMinuteFraction As Decimal = conversionWrapper.FractionsOfADay(MINUTES_IN_HOUR)
-                    fractionsOfADay = sixtyMinuteFraction * convertedToHours
-                    Dim remainder As Integer = minutesEntered Mod WORK_MINUTES
-                    fractionsOfADay += conversionWrapper.FractionsOfADay(remainder)
-                Else
-                    fractionsOfADay = conversionWrapper.FractionsOfADay(minutesEntered)
-                End If
-                TxtFractions.Text = Format(fractionsOfADay, "0.000")
-            Else
-                TxtFractions.Text = vbNullString
-                TxtMinutes.Focus()
-                Dim unUsed = MessageBox.Show("Minutes entered is greater than eight (8) hours (3,840 minutes).", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
-        Else
-            TxtFractions.Text = vbNullString
-        End If
-    End Sub
-
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
         Close()
     End Sub
@@ -69,7 +58,46 @@
         TopMost = ChkTopMost.Checked
     End Sub
 
-    Private Sub NudDays_ValueChanged(sender As Object, e As EventArgs) Handles NudDays.ValueChanged
-        CalculateCreditsEarned()
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Close()
+    End Sub
+
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        With FrmSettings
+            .ShowDialog()
+            .Dispose()
+        End With
+    End Sub
+
+    Private Sub NudMonths_GotFocus(sender As Object, e As EventArgs) Handles NudMonths.GotFocus
+        NudMonths.Select(0, NudMonths.Text.Length)
+    End Sub
+
+    Private Sub NudDays_GotFocus(sender As Object, e As EventArgs) Handles NudDays.GotFocus
+        NudDays.Select(0, NudDays.Text.Length)
+    End Sub
+
+    Private Sub NudHours_GotFocus(sender As Object, e As EventArgs) Handles NudHours.GotFocus
+        NudHours.Select(0, NudHours.Text.Length)
+    End Sub
+
+    Private Sub NudMinutes_GotFocus(sender As Object, e As EventArgs) Handles NudMinutes.GotFocus
+        NudMinutes.Select(0, NudMinutes.Text.Length)
+    End Sub
+
+    Private Sub NudMinutes_TextChanged(sender As Object, e As EventArgs) Handles NudMinutes.TextChanged
+        ConvertedMinutes()
+    End Sub
+
+    Private Sub NudHours_TextChanged(sender As Object, e As EventArgs) Handles NudHours.TextChanged
+        ConvertHours()
+    End Sub
+
+    Private Sub NudMonths_TextChanged(sender As Object, e As EventArgs) Handles NudMonths.TextChanged
+        ConvertMonths()
+    End Sub
+
+    Private Sub NudDays_TextChanged(sender As Object, e As EventArgs) Handles NudDays.TextChanged
+        ConvertDays()
     End Sub
 End Class

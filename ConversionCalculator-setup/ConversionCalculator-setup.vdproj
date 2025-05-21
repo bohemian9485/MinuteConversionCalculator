@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_05F55261D5CB1ACFE2328CC2D28F76C0"
-        "OwnerKey" = "8:_32B1F7E579614EEE83C4FD59A597B6A9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_32B1F7E579614EEE83C4FD59A597B6A9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -40,19 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A4CF33618B3A833AB159FF5676368AD0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_32B1F7E579614EEE83C4FD59A597B6A9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_05F55261D5CB1ACFE2328CC2D28F76C0"
+        "OwnerKey" = "8:_A4CF33618B3A833AB159FF5676368AD0"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -73,6 +61,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -134,37 +130,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_05F55261D5CB1ACFE2328CC2D28F76C0"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:FractionsOfADay, Version=1.0.3.1, Culture=neutral, processorArchitecture=AMD64"
-                "ScatterAssemblies"
-                {
-                    "_05F55261D5CB1ACFE2328CC2D28F76C0"
-                    {
-                    "Name" = "8:FractionsOfADay.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:FractionsOfADay.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_42F3C428BFC9423E8980FF29863EFBB2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_54BAA5BEB39C40BB8907AB707D0D1D72"
             {
             "SourcePath" = "8:..\\convert.ico"
@@ -294,15 +259,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Conversion Calculator Setup"
-        "ProductCode" = "8:{3E81BA8F-10FC-41F9-A8E6-CC1ED2427134}"
-        "PackageCode" = "8:{789A1DD1-E1F6-4FB3-B8A2-5D52E054014F}"
+        "ProductCode" = "8:{4B064C60-0B30-4768-9CEF-65B63D7B0E46}"
+        "PackageCode" = "8:{85CA1465-10B0-4D5A-A2F5-4746A32C9D8B}"
         "UpgradeCode" = "8:{0BD917C6-BE1B-4B50-8E88-D221C383274D}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.8"
+        "ProductVersion" = "8:1.0.36"
         "Manufacturer" = "8:Reynaldo Ibarra C. Tubianosa"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
