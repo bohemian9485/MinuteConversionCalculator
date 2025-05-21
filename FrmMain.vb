@@ -5,9 +5,17 @@
     Private Const WORK_MINUTES As Integer = 480
     Private Const MINUTES_IN_HOUR As Integer = 60
 
+    Private Sub CalculateCreditsEarned()
+        Dim creditsEarned As Decimal = 0
+        Dim daysCredited As Integer = NudDays.Value
+        Dim daysInMonth As Integer = 30
+        TxtEarned.Text = Math.Round(1.25 / daysInMonth * daysCredited, 3).ToString("0.000")
+    End Sub
+
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Text += " v" & My.Application.Info.Version.ToString
+        Text += $" v{My.Application.Info.Version.Major}.{My.Application.Info.Version.Minor}.{My.Application.Info.Version.Build}"
         conversionWrapper.GetClassSettings()
+        CalculateCreditsEarned()
         TopMost = ChkTopMost.Checked
     End Sub
 
@@ -15,7 +23,7 @@
         conversionWrapper = Nothing
     End Sub
 
-    Private Sub TxtMinutes_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMinutes.KeyPress
+    Private Sub TxtMinutes_KeyPress(sender As Object, e As KeyPressEventArgs)
         ' Limit user input to numeric characters
         '97 - 122 = Ascii codes for simple letters
         '65 - 90  = Ascii codes for capital letters
@@ -59,5 +67,9 @@
 
     Private Sub ChkTopMost_CheckedChanged(sender As Object, e As EventArgs) Handles ChkTopMost.CheckedChanged
         TopMost = ChkTopMost.Checked
+    End Sub
+
+    Private Sub NudDays_ValueChanged(sender As Object, e As EventArgs) Handles NudDays.ValueChanged
+        CalculateCreditsEarned()
     End Sub
 End Class

@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:Setup"
+"ProjectName" = "8:ConversionCalculator-Setup"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -21,13 +21,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_33945E35125F1BBD4EB25C480D4C44B9"
+        "MsmKey" = "8:_86FC729B44054D415F7D301B81B54ABF"
         "OwnerKey" = "8:_ED3CB0E9986144D6ADA2B4F2B7A81322"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_86FC729B44054D415F7D301B81B54ABF"
+        "MsmKey" = "8:_C0F26F5D7CFC85BE798EC37A4198AB7B"
         "OwnerKey" = "8:_ED3CB0E9986144D6ADA2B4F2B7A81322"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -46,7 +46,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_33945E35125F1BBD4EB25C480D4C44B9"
+        "OwnerKey" = "8:_C0F26F5D7CFC85BE798EC37A4198AB7B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -80,6 +80,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -162,20 +170,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_33945E35125F1BBD4EB25C480D4C44B9"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_86FC729B44054D415F7D301B81B54ABF"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:FractionsOfADay, Version=1.0.2.0, Culture=neutral, processorArchitecture=AMD64"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_33945E35125F1BBD4EB25C480D4C44B9"
+                    "_86FC729B44054D415F7D301B81B54ABF"
                     {
-                    "Name" = "8:FractionsOfADay.dll"
+                    "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:FractionsOfADay.dll"
+            "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_5761A670B3A1470194FD76CA7E1988A4"
@@ -193,20 +201,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_86FC729B44054D415F7D301B81B54ABF"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C0F26F5D7CFC85BE798EC37A4198AB7B"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+            "AssemblyAsmDisplayName" = "8:FractionsOfADay, Version=1.0.3.1, Culture=neutral, processorArchitecture=AMD64"
                 "ScatterAssemblies"
                 {
-                    "_86FC729B44054D415F7D301B81B54ABF"
+                    "_C0F26F5D7CFC85BE798EC37A4198AB7B"
                     {
-                    "Name" = "8:System.Net.Http.dll"
+                    "Name" = "8:FractionsOfADay.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:System.Net.Http.dll"
+            "SourcePath" = "8:FractionsOfADay.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_5761A670B3A1470194FD76CA7E1988A4"
@@ -302,15 +310,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Conversion Calculator"
-        "ProductCode" = "8:{2025495B-6AB5-4618-BCA2-C73C4835A6D7}"
-        "PackageCode" = "8:{238A3DB4-3C2F-4144-B78C-D3DC3D357B10}"
+        "ProductCode" = "8:{4487F6CC-A707-4FE7-B566-C5552BEC4EE8}"
+        "PackageCode" = "8:{32115494-4548-49B4-9883-554A0B2D44AB}"
         "UpgradeCode" = "8:{245D31B5-A8CA-469B-8B61-85B1BCC1B75F}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.6"
         "Manufacturer" = "8:Reynaldo Ibarra C. Tubianosa"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
