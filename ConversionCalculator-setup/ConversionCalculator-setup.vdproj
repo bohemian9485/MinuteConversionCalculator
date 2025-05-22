@@ -68,6 +68,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -259,15 +267,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Conversion Calculator Setup"
-        "ProductCode" = "8:{4B064C60-0B30-4768-9CEF-65B63D7B0E46}"
-        "PackageCode" = "8:{85CA1465-10B0-4D5A-A2F5-4746A32C9D8B}"
+        "ProductCode" = "8:{3088BB55-36F4-4867-A4FA-33063E07CC2E}"
+        "PackageCode" = "8:{273D80B2-BBD8-4AE1-B909-B97A6AA9F95C}"
         "UpgradeCode" = "8:{0BD917C6-BE1B-4B50-8E88-D221C383274D}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.36"
+        "ProductVersion" = "8:1.0.40"
         "Manufacturer" = "8:Reynaldo Ibarra C. Tubianosa"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
