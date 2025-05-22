@@ -100,4 +100,11 @@
     Private Sub NudDays_TextChanged(sender As Object, e As EventArgs) Handles NudDays.TextChanged
         ConvertDays()
     End Sub
+
+    Private Sub MnuAbout_Click(sender As Object, e As EventArgs) Handles MnuAbout.Click
+        With FrmAbout
+            .ShowDialog()
+            .Dispose()
+        End With
+    End Sub
 End Class
