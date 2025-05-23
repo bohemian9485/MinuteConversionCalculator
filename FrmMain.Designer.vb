@@ -100,7 +100,7 @@ Partial Class FrmMain
         Me.NudMinutes.Name = "NudMinutes"
         Me.NudMinutes.Size = New System.Drawing.Size(50, 24)
         Me.NudMinutes.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.NudMinutes, "Minutes to be converted, maximum is 60 minutes")
+        Me.ToolTip1.SetToolTip(Me.NudMinutes, "Conversion of working minutes into fractions of a day")
         Me.NudMinutes.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'NudDays
@@ -111,7 +111,7 @@ Partial Class FrmMain
         Me.NudDays.Name = "NudDays"
         Me.NudDays.Size = New System.Drawing.Size(50, 24)
         Me.NudDays.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.NudDays, "Days to be converted, maximum is 30 days")
+        Me.ToolTip1.SetToolTip(Me.NudDays, "Vacation and sick leave credits earned on a daily basis")
         Me.NudDays.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'TxtHours
@@ -132,7 +132,7 @@ Partial Class FrmMain
         Me.NudHours.Name = "NudHours"
         Me.NudHours.Size = New System.Drawing.Size(50, 24)
         Me.NudHours.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.NudHours, "Hours to be converted, maximum is 8 hours")
+        Me.ToolTip1.SetToolTip(Me.NudHours, "Conversion of working hours into fractions of a day")
         Me.NudHours.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'GroupBox1
@@ -144,7 +144,7 @@ Partial Class FrmMain
         Me.GroupBox1.Size = New System.Drawing.Size(148, 53)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Minutes"
+        Me.GroupBox1.Text = "Minute/s"
         '
         'GroupBox2
         '
@@ -155,7 +155,7 @@ Partial Class FrmMain
         Me.GroupBox2.Size = New System.Drawing.Size(148, 53)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Days"
+        Me.GroupBox2.Text = "Day/s"
         '
         'TxtEarned
         '
@@ -175,7 +175,7 @@ Partial Class FrmMain
         Me.GroupBox3.Size = New System.Drawing.Size(148, 53)
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Hours"
+        Me.GroupBox3.Text = "Hour/s"
         '
         'GroupBox4
         '
@@ -186,7 +186,7 @@ Partial Class FrmMain
         Me.GroupBox4.Size = New System.Drawing.Size(148, 53)
         Me.GroupBox4.TabIndex = 1
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Months"
+        Me.GroupBox4.Text = "Month/s"
         '
         'TxtMonths
         '
@@ -205,6 +205,7 @@ Partial Class FrmMain
         Me.NudMonths.Name = "NudMonths"
         Me.NudMonths.Size = New System.Drawing.Size(50, 24)
         Me.NudMonths.TabIndex = 0
+        Me.ToolTip1.SetToolTip(Me.NudMonths, "Vacation and sick leave credits earned on a monthly basis")
         Me.NudMonths.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'MenuStrip1
